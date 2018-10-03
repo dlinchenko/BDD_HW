@@ -2,8 +2,8 @@
 
 
 @mytag
-Scenario: Compare Iphones props
+Scenario: Compare Iphones props and print similar to console
 	Given I am on Rozetka store page
-	When I search for Apple Iphone 7 and I open first found item
-	And I open characteristics tab
-	Then the result should be 120 on the screen
+	When I get details of Apple IPhone 7
+	And I get details of Apple IPhone 7 Plus
+	Then their details are compared and similar are printed to console

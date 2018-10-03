@@ -70,11 +70,11 @@ namespace BDD_HW.Tests
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Compare Iphones props")]
+        [NUnit.Framework.DescriptionAttribute("Compare Iphones props and print similar to console")]
         [NUnit.Framework.CategoryAttribute("mytag")]
-        public virtual void CompareIphonesProps()
+        public virtual void CompareIphonesPropsAndPrintSimilarToConsole()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Compare Iphones props", null, new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Compare Iphones props and print similar to console", null, new string[] {
                         "mytag"});
 #line 5
 this.ScenarioInitialize(scenarioInfo);
@@ -82,11 +82,11 @@ this.ScenarioInitialize(scenarioInfo);
 #line 6
  testRunner.Given("I am on Rozetka store page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 7
- testRunner.When("I search for Apple Iphone 7 and I open first found item", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+ testRunner.When("I get details of Apple IPhone 7", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 8
- testRunner.And("I open characteristics tab", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I get details of Apple IPhone 7 Plus", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 9
- testRunner.Then("the result should be 120 on the screen", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("their details are compared and similar are printed to console", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

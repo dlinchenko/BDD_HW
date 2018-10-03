@@ -66,6 +66,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base\BaseSetup.cs" />
+    <Compile Include="Steps\IphonePropsComparionSteps.cs" />
     <Compile Include="Pages\BasePage.cs" />
     <Compile Include="Pages\ItemPage.cs" />
     <Compile Include="Pages\ItemPropsPage.cs" />
@@ -87,10 +89,7 @@
       <LastGenOutput>IphonePropsComparion.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Base\" />
-    <Folder Include="Steps\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\SpecFlow.2.4.0\build\SpecFlow.targets" Condition="Exists('..\packages\SpecFlow.2.4.0\build\SpecFlow.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
