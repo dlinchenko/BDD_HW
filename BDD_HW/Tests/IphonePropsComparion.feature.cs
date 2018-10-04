@@ -86,7 +86,8 @@ this.ScenarioInitialize(scenarioInfo);
 #line 8
  testRunner.And("I get details of Apple IPhone 7 Plus", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 9
- testRunner.Then("their details are compared and similar are printed to console", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("details of Apple IPhone 7 and Apple IPhone 7 Plus are compared and similar are pr" +
+                    "inted to console", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

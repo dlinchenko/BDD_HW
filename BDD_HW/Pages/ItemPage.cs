@@ -1,18 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using SeleniumExtras.PageObjects;
 
 namespace Pages
 {
     internal class ItemPage : BasePage
     {
+        private const string charTabSelector = "//li[@name='characteristics']/a";
+
         internal ItemPage (IWebDriver driver): base(driver) { }
 
-        [FindsBy(How = How.XPath, Using = "//li[@name='characteristics']/a")]
+        [FindsBy(How = How.XPath, Using = charTabSelector)]
         private IWebElement CharacteristicsTab;
 
         internal void OpenCharacteristicsTab()
